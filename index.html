@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wander Licquor - Home</title>
+  <style>
+    /* Estilos personalizados */
+    body {
+      background-color: #b5dbdb;
+      font-family: Verdana, Arial, sans-serif;
+    }
+    
+    nav {
+      background-color: #15ddd8;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    
+    nav ul li {
+      margin-right: 16px;
+      position: relative;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 5px 16px;
+      border-radius: 5px;
+      font-size: 16px; /* Tamanho do menu */
+    }
+    
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      background-color: #96eae3;
+      padding: 16px;
+      border-radius: 5px;
+      text-align: justify; /* Texto justificado */
+    }
+    
+    nav ul li:hover ul {
+      display: block;
+    }
+    
+    nav ul li ul li {
+      margin-top: 10px;
+    }
+    
+    nav ul li ul li a {
+      color: #f9d53e; /* Cor do sub-menu */
+      font-size: 12px; /* Tamanho do sub-menu */
+    }
+    
+    nav ul li:hover ul li a,
+    nav ul li#detalhes-pedido:hover ul.sub-menu-detalhes-pedido {
+      color: #00235e; /* Cor do sub-menu ao passar o mouse */
+    }
+    
+    nav ul li#detalhes-pedido:hover ul.sub-menu-detalhes-pedido {
+      display: block;
+      background-color: #2f91ae;
+    }
+
+    /* Estilos para a mudança de fundo */
+    nav ul li ul li a:hover,
+    nav ul li#detalhes-pedido ul.sub-menu-detalhes-pedido li a:hover {
+      background-color: #ffffff;
+    }
+
+    /* Estilos para a lista suspensa do sub-menu "Detalhes do Pedido" */
+    nav ul li#detalhes-pedido ul.sub-menu-detalhes-pedido {
+      display: none;
+    }
+
+    nav ul li#detalhes-pedido:hover ul.sub-menu-detalhes-pedido {
+      display: block;
+    }
+
+    nav ul li#detalhes-pedido ul.sub-menu-detalhes-pedido li a:hover {
+      background-color: #f9d53e;
+    }
+    
+    h1 {
+      color: #2f91ae; /* Cor do título */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegação -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Categorias</a>
+        <ul>
+          <li><a href="#">Cervejas</a></li>
+          <li><a href="#">Vinhos</a></li>
+          <li><a href="#">Destilados</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Carrinho</a></li>
+      <li><a href="#">Perfil</a>
+        <ul>
+          <li><a href="#">Informações</a></li>
+          <li><a href="#">Histórico</a></li>
+          <li><a href="#">Favoritos</a></li>
+          <li id="detalhes-pedido"><a href="#">Pedidos</a>
+            <ul class="sub-menu-detalhes-pedido">
+              <li><a href="#">Informações</a></li>
+              <li><a href="#">Status</a></li>
+              <li><a href="#">Pagamento</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Configurações</a>
+        <ul>
+          <li><a href="#">Idioma</a></li>
+          <li><a href="#">Notificações</a></li>
+          <li><a href="#">Privacidade</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Sobre</a>
+        <ul>
+          <li><a href="#">Fornecedores</a></li>
+          <li><a href="#">Equipe</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Ajuda</a>
+        <ul>
+          <li><a href="#">F.A.Q.</a></li>
+          <li><a href="#">Suporte</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo da página -->
+  <h1 style="font-size: 20px;">Bem-vindo ao Wander Licquor!</h1>
+  <p>Sua central de Bebidas Artesanais!</p>
+<h1 style="font-size: 8px;">Venda proibida para menores de 18 anos.</h1>
+</body>
+</html>
+
+
